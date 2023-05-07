@@ -1,5 +1,6 @@
 library(haven)
 library(tidyverse)
+# 导入数据
 cfps2012fam <- read_dta("cfps2012fam.dta")
 cfps2012child <- read_dta("cfps2012child.dta")
 cfps2012adult <- read_dta("cfps2012adult.dta")
@@ -10,16 +11,20 @@ kidedu<-cfps2012fam %>% select(pid, fid12, fid10, pid_c1,pid_c2,pid_c3,pid_c4,pi
                        tb6_a12_c5,tb6_a12_c6,tb6_a12_c7,tb6_a12_c8,tb6_a12_c9,tb6_a12_c9,tb6_a12_c10,c1age:c10age,nch)
 
 
-# get the full list of kids edu 
-ch1<-cfps2012child %>%select(pid,wf3m,wf301m)
+# get the full list of kids edu
+# tips：using the variable school except wave2012. different year have little difference on the var name. 
 
+ch1<-cfps2012child %>%select(pid,wf3m,wf301m)
 ch2<-cfps2012adult%>%select(pid,wc01,kr1)
 
+# combine the adult data and chidren data as a super long data.
+# warn: data 2016 has some problems, need to delet the replicated data 
 ch1<-ch1 %>% rename(sch = wf3m)%>%rename(schstg = wf301m)
 ch2<-ch2 %>% rename(sch = wc01)%>%rename(schstg = kr1)
 bind_rows(ch1,ch2)->ch3
 
 #merge 10 times 
+# using the left join， n = n in famconf. 
 ch3->c1
 c1<-c1%>%rename(edu_c1 = schstg)%>%rename(sch_c1 = sch)
 kidedu<-left_join(kidedu,c1,by = c("pid_c1"="pid"))
