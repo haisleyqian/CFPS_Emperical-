@@ -1,4 +1,4 @@
-# CFPS_Emperical-
+# CFPS Emperical
 
 ### This file is to record the data clean procedure of CFPS 2012-2020. (without 2014, due to the absence of CES-D in that wave)
 
