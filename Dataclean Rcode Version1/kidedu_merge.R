@@ -13,6 +13,8 @@ kidedu<-cfps2012fam %>% select(pid, fid12, fid10, pid_c1,pid_c2,pid_c3,pid_c4,pi
 
 # get the full list of kids edu
 # tips：using the variable school except wave2012. different year have little difference on the var name. 
+# edu_c* and sch_c8 are primarry var from raw data. There are no data clean contuction on these two var. 
+# Later we are going to do missing indicate on Stata to show the reason how the Missing Value generated. 
 
 ch1<-cfps2012child %>%select(pid,wf3m,wf301m)
 ch2<-cfps2012adult%>%select(pid,wc01,kr1)
