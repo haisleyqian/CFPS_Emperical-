@@ -1,0 +1,122 @@
+lavaan 0.6.15 ended normally after 150 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        25
+
+                                                  Used       Total
+  Number of observations                         10911       32265
+
+Model Test User Model:
+                                                      
+  Test statistic                                42.521
+  Degrees of freedom                                23
+  P-value (Chi-square)                           0.008
+
+Model Test Baseline Model:
+
+  Test statistic                            205237.142
+  Degrees of freedom                                42
+  P-value                                        0.000
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    1.000
+  Tucker-Lewis Index (TLI)                       1.000
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)             -89342.992
+  Loglikelihood unrestricted model (H1)             NA
+                                                      
+  Akaike (AIC)                              178735.984
+  Bayesian (BIC)                            178918.423
+  Sample-size adjusted Bayesian (SABIC)     178838.976
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.009
+  90 Percent confidence interval - lower         0.004
+  90 Percent confidence interval - upper         0.013
+  P-value H_0: RMSEA <= 0.050                    1.000
+  P-value H_0: RMSEA >= 0.080                    0.000
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.005
+
+Parameter Estimates:
+
+  Standard errors                             Standard
+  Information                                 Expected
+  Information saturated (h1) model          Structured
+
+Latent Variables:
+                   Estimate     Std.Err  z-value  P(>|z|)
+  i =~                                                   
+    cesd2012             1.000                           
+    cesd2018             1.000                           
+    cesd2020             1.000                           
+  s =~                                                   
+    cesd2012             0.000                           
+    cesd2018             4.000                           
+    cesd2020             5.000                           
+
+Regressions:
+                   Estimate     Std.Err  z-value  P(>|z|)
+  i ~                                                    
+    age2012              0.094    0.021    4.456    0.000
+    agesqr2012          -0.001    0.000   -4.386    0.000
+    gender2012          -1.020    0.077  -13.273    0.000
+    edu2012             -0.593    0.032  -18.694    0.000
+  s ~                                                    
+    age2012             -0.015    0.005   -3.041    0.002
+    agesqr2012           0.000    0.000    2.741    0.006
+    gender2012           0.026    0.017    1.517    0.129
+    edu2012              0.025    0.007    3.615    0.000
+  cesd2012 ~                                             
+    prmr12              -0.008    0.076   -0.112    0.911
+    mdl12               -0.014    0.089   -0.160    0.873
+    high12              -0.017    0.182   -0.093    0.926
+  cesd2018 ~                                             
+    prmr18               0.029    0.079    0.368    0.713
+    mdl18                0.015    0.109    0.138    0.890
+    high18               0.138    0.115    1.196    0.232
+  cesd2020 ~                                             
+    prmr20               0.033    0.089    0.375    0.708
+    mdl20                0.036    0.113    0.322    0.747
+    high20              -0.108    0.130   -0.829    0.407
+
+Covariances:
+                   Estimate     Std.Err  z-value  P(>|z|)
+ .i ~~                                                   
+   .s                   -0.203    0.156   -1.297    0.195
+
+Intercepts:
+                   Estimate     Std.Err  z-value  P(>|z|)
+   .cesd2012             0.000                           
+   .cesd2018             0.000                           
+   .cesd2020             0.000                           
+   .i                    5.376    0.487   11.046    0.000
+   .s                    0.319    0.121    2.626    0.009
+
+Variances:
+                   Estimate     Std.Err  z-value  P(>|z|)
+   .cesd2012             8.565    0.716   11.970    0.000
+   .cesd2018             8.147    0.163   50.093    0.000
+   .cesd2020             8.797    0.205   42.994    0.000
+   .i                    7.054    0.713    9.900    0.000
+   .s                    0.135    0.036    3.749    0.000
+
+i ~ age2012 + agesqr2012 + gender2012 + edu2012
+s ~ age2012 + agesqr2012 + gender2012 + edu2012
+cesd2012 ~ prmr12 + mdl12 + high12
+cesd2018 ~ prmr18 + mdl18 + high18
+cesd2020 ~ prmr20 + mdl20 + high20
+[1] "\ngcm8 = growth(model8, data = widedf2)\nsink(\"output2.txt\",append=FALSE,split = FALSE)\nsummary(gcm8,fit.measures = TRUE)\nsemPaths(gcm7=8)\nmodel8 <- "
+i ~ age2012 + agesqr2012 + gender2012 + edu2012
+s ~ age2012 + agesqr2012 + gender2012 + edu2012
+cesd2012 ~ prmr12 + mdl12 + high12
+cesd2016 ~ prmr16 + mdl16 + high16
+cesd2018 ~ prmr18 + mdl18 + high18
+cesd2020 ~ prmr20 + mdl20 + high20

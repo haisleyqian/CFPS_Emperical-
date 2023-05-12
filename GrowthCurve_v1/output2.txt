@@ -1,0 +1,118 @@
+lavaan 0.6.15 ended normally after 157 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        29
+
+                                                  Used       Total
+  Number of observations                         10162       32265
+
+Model Test User Model:
+                                                      
+  Test statistic                               229.778
+  Degrees of freedom                                49
+  P-value (Chi-square)                           0.000
+
+Model Test Baseline Model:
+
+  Test statistic                            263418.104
+  Degrees of freedom                                70
+  P-value                                        0.000
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.999
+  Tucker-Lewis Index (TLI)                       0.999
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)            -109667.693
+  Loglikelihood unrestricted model (H1)             NA
+                                                      
+  Akaike (AIC)                              219393.386
+  Bayesian (BIC)                            219602.952
+  Sample-size adjusted Bayesian (SABIC)     219510.794
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.019
+  90 Percent confidence interval - lower         0.017
+  90 Percent confidence interval - upper         0.022
+  P-value H_0: RMSEA <= 0.050                    1.000
+  P-value H_0: RMSEA >= 0.080                    0.000
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.009
+
+Parameter Estimates:
+
+  Standard errors                             Standard
+  Information                                 Expected
+  Information saturated (h1) model          Structured
+
+Latent Variables:
+                   Estimate     Std.Err  z-value  P(>|z|)
+  i =~                                                   
+    cesd2012             1.000                           
+    cesd2016             1.000                           
+    cesd2018             1.000                           
+    cesd2020             1.000                           
+  s =~                                                   
+    cesd2012             0.000                           
+    cesd2016             3.000                           
+    cesd2018             4.000                           
+    cesd2020             5.000                           
+
+Regressions:
+                   Estimate     Std.Err  z-value  P(>|z|)
+  i ~                                                    
+    age2012              0.089    0.022    4.108    0.000
+    agesqr2012          -0.001    0.000   -4.006    0.000
+    gender2012          -1.006    0.078  -12.952    0.000
+    edu2012             -0.567    0.032  -17.639    0.000
+  s ~                                                    
+    age2012             -0.010    0.005   -1.980    0.048
+    agesqr2012           0.000    0.000    1.672    0.095
+    gender2012           0.027    0.018    1.542    0.123
+    edu2012              0.023    0.007    3.233    0.001
+  cesd2012 ~                                             
+    prmr12               0.109    0.077    1.414    0.157
+    mdl12                0.035    0.090    0.385    0.700
+    high12               0.091    0.183    0.499    0.618
+  cesd2016 ~                                             
+    prmr16              -0.236    0.075   -3.131    0.002
+    mdl16               -0.589    0.109   -5.401    0.000
+    high16              -0.131    0.110   -1.187    0.235
+  cesd2018 ~                                             
+    prmr18               0.119    0.075    1.589    0.112
+    mdl18                0.043    0.106    0.405    0.686
+    high18               0.251    0.114    2.210    0.027
+  cesd2020 ~                                             
+    prmr20               0.112    0.086    1.299    0.194
+    mdl20                0.118    0.114    1.032    0.302
+    high20              -0.051    0.131   -0.392    0.695
+
+Covariances:
+                   Estimate     Std.Err  z-value  P(>|z|)
+ .i ~~                                                   
+   .s                    0.020    0.077    0.259    0.795
+
+Intercepts:
+                   Estimate     Std.Err  z-value  P(>|z|)
+   .cesd2012             0.000                           
+   .cesd2016             0.000                           
+   .cesd2018             0.000                           
+   .cesd2020             0.000                           
+   .i                    5.262    0.500   10.517    0.000
+   .s                    0.216    0.125    1.726    0.084
+
+Variances:
+                   Estimate     Std.Err  z-value  P(>|z|)
+   .cesd2012             9.630    0.342   28.139    0.000
+   .cesd2016             8.759    0.153   57.260    0.000
+   .cesd2018             7.618    0.143   53.317    0.000
+   .cesd2020             9.293    0.189   49.174    0.000
+   .i                    6.156    0.339   18.141    0.000
+   .s                    0.078    0.020    3.915    0.000
+
