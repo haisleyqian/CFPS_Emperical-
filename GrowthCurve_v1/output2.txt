@@ -1,3 +1,5 @@
+contained data from year 2016 
+
 lavaan 0.6.15 ended normally after 157 iterations
 
   Estimator                                         ML
