@@ -1,3 +1,7 @@
+without data from year2016
+Did not use the dummy var to define the obs. group. 
+All obs were available to this model. 
+
 lavaan 0.6.15 ended normally after 150 iterations
 
   Estimator                                         ML
