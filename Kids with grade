@@ -1,0 +1,6 @@
+onekidatschool.dta did not drp the kids whose grade is 0, which means though they are at school but they are not within 1-12 grades.
+
+onekidatsch-2.dta only kept the kids whose grades were between 1-12, and dropped those whose grades were not in this range. 
+
+Updated on Oct.18
+By Haisley
